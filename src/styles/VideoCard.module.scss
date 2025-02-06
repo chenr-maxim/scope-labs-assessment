@@ -1,0 +1,29 @@
+.video-card-link {
+  text-decoration: none;
+  color: inherit;
+
+  .video-card-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    .video {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  }
+}
