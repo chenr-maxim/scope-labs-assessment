@@ -24,15 +24,20 @@ note: Since I didn't want to spend too much time on this project here are some t
 
   - Displays a list of videos that's fetched from the API
   - Clicking on a video navigates to `/video/[id]`.
+<img width="1647" alt="Screenshot 2025-02-07 at 12 31 51 AM" src="https://github.com/user-attachments/assets/cdd70bd6-96d5-418b-8ab6-493ec2048448" />
 
 - Video Page (`/video/[id]`)
 
   - Displays the selected video and allows for full-screen format
   - Shows a list of comments next to the selected video
   - Allows the user to post new comments to the selected video
+<img width="1295" alt="Screenshot 2025-02-07 at 12 32 10 AM" src="https://github.com/user-attachments/assets/7607cf0f-ef2a-491e-851b-2634d64caaf9" />
+
 
 - Create Video Page (`/create-video`)
   - Form for the user to submit a new video with a title, description and video URL
+<img width="835" alt="Screenshot 2025-02-07 at 12 41 52 AM" src="https://github.com/user-attachments/assets/695fe8d6-37d3-4b6c-8245-417fb30b5950" />
+
 
 ## How to run the project
 
