@@ -14,9 +14,11 @@ So it allows the user to:
 note: Since I didn't want to spend too much time on this project here are some things I would have done if I had more time:
 
 - better utilize Next.js App Router for better routing and performance
-- quality of life issues I can solve such as already showing the latest comment on each video
+- clean up the scss and maybe add better theming
+- quality of life issues I can solve such as already scrolled to the latest comment on each video
 - allow the user to manipulate playback speed on the video
 - cleaner and more accessible design for responsiveness and for mobile users
+- add unit tests
 
 ## Application Features
 
