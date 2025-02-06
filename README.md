@@ -1,3 +1,58 @@
+# Video Application
+
+## Overview
+
+This is a simple video platform application that is built using Next.js (App Router), Typescript and SCSS.
+
+So it allows the user to:
+
+- View a list of videos with the titles, desccriptions, thumbnails in grid format
+- Allows the user to play the videos in full-screen mode as well as controlling volume
+- Create new videos by submitting a title, description, and video url, with simple validation
+- View and post comments on each video
+
+note: Since I didn't want to spend too much time on this project here are some things I would have done if I had more time:
+
+- better utilize Next.js App Router for better routing and performance
+- quality of life issues I can solve such as already showing the latest comment on each video
+- allow the user to manipulate playback speed on the video
+- cleaner and more accessible design for responsiveness and for mobile users
+
+## Application Features
+
+- Home Page (video list)
+
+  - Displays a list of videos that's fetched from the API
+  - Clicking on a video navigates to `/video/[id]`.
+
+- Video Page (`/video/[id]`)
+
+  - Displays the selected video and allows for full-screen format
+  - Shows a list of comments next to the selected video
+  - Allows the user to post new comments to the selected video
+
+- Create Video Page (`/create-video`)
+  - Form for the user to submit a new video with a title, description and video URL
+
+## How to run the project
+
+To run the project first clone the repository, and install the dependencies.
+
+```
+git clone https://github.com/yourusername/video-platform.git
+cd video-platform
+```
+
+```
+npm install
+```
+
+Once the install finishes to run the development server:
+
+```bash
+npm run dev
+```
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

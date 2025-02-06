@@ -15,7 +15,7 @@ const initialFormState = {
 const CreateVideoPage = () => {
   const [formData, setFormData] = useState(initialFormState);
   const [errors, setErrors] = useState(initialFormState);
-  const [success, setSuccess] = useState(false);
+  const [success, setSuccess] = useState(true);
   const router = useRouter();
 
   const handleChange = (
@@ -49,6 +49,11 @@ const CreateVideoPage = () => {
     if (response.success) {
       setFormData(initialFormState);
       setErrors(initialFormState);
+      setSuccess(true);
+
+      setTimeout(() => {
+        router.push("/");
+      }, 3500);
     }
   };
 
@@ -99,6 +104,13 @@ const CreateVideoPage = () => {
           {errors.video_url || ""}
         </p>
       </div>
+
+      {success && (
+        <p className={styles["success-message"]}>
+          Video created successfully! Redirecting..
+        </p>
+      )}
+
       <div className={styles["button-row"]}>
         <button
           type="button"
